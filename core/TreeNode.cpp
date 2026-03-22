@@ -1176,7 +1176,7 @@ Process *TreeNode::update_tree(int time_slice, std::unordered_set<Process*> &upd
             s.pop();
 
             if (prev < 3) {
-                if (next->data[prev] && !updated.contains(next->data[prev])) {
+                if (next->data[prev] && updated.find(next->data[prev]) == updated.end()) {
                     updated.insert(next->data[prev]);
 
                     if (next->data[prev]->update_wait_time(time_slice)) {
