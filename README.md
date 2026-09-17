@@ -1,4 +1,4 @@
-# Red-blakc tree process scheduler simulator
+# Red-black tree process scheduler simulator
 
 This project implements a command-line utility for simulating process scheduling using balanced search trees. It allows for the management and execution of processes based on execution time and waiting constraints.
 
